@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width", initial-scale=1.0> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Coding Quiz Homework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="topnav">
+            <a class="active" href="#">View Highscores</a>
+            <div class="topnav-right">Time: <p id="timer">75</p>
+            </div>
+    </header>
+
+    <h1><strong>Coding Quiz Challenge</strong></h1>
+
+    <br>
+
+    <p>Try to answer the following coding related questions within the time<br>limit. Keep in mind that incorrect
+        answers will penalize your scoretime<br>by ten seconds!</p>
+
+    <br>
+
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="title"></div>
+            <div id="choices-buttons">Question<class="btn-grid">
+                <button class="btn">choice1</button>
+                <button class="btn">choice2</button>
+                <button class="btn">choice3</button>
+                <button class="btn">choice4</button>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn" onclick="clock()">Start Quiz!</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
